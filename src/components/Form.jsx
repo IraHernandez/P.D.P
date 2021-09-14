@@ -36,12 +36,12 @@ function Form() {
                     type="text"
                     placeholder="Name of the role"
                     onChange={(e) => setRole(e.target.value, role)}>
-                    <option value="1"> Data </option>
-                    <option value="2"> Creative </option>
-                    <option value="3"> Tech </option>
-                    <option value="4"> PMO </option>
-                    <option value="5"> Admin </option>
-                    <option value="6"> Media </option>
+                    <option value="Data"> Data </option>
+                    <option value="Creative"> Creative </option>
+                    <option value="Tech"> Tech </option>
+                    <option value="PMO"> PMO </option>
+                    <option value="Admin"> Admin </option>
+                    <option value="Media"> Media </option>
                 </select>
             </label>
             <br />
@@ -50,11 +50,12 @@ function Form() {
                     type="text"
                     placeholder="Name of the role"
                     onChange={(e) => setLevel(e.target.value, level)}>
-                    <option value="1"> Option1 </option>
-                    <option value="2"> Option2 </option>
+                    <option value="Junior"> Junior </option>
+                    <option value="Semi Senior"> Semi Senior </option>
+                    <option value="Senior"> Junior </option>
                 </select>
             </label>
-            <button>Guardar</button>
+            <button onClick={newUser}>Save</button>
 
         </div>
     );
