@@ -9,14 +9,14 @@ const Header = ()=> {
     <div>
       <header>
         <div className="header-logo ">
-          <img src={logo} alt="Logo de la página" />
+          <img src={logo} alt="page logo" />
         </div>
         <div className="header-menu ">
-          <img src={menuGroupe} alt="menu de página" className="menu" />
+          <img src={menuGroupe} alt="menu page" className="menu" />
           <div className="barra"></div>
           <img
             src={Notification}
-            alt="logo de notificación"
+            alt="notification logo"
             className="notification"
           />
           <p>Cesar Avellaneda</p>
