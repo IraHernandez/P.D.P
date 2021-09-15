@@ -8,14 +8,14 @@ function Form() {
     const [role, setRole] = useState('');
     const [level, setLevel] = useState('');
 
-    const valueUser = {
+    const valueRole = {
         name: name,
         role: role,
         level: level,
     }
 
-    const newUser = () => {
-        addRole(valueUser)
+    const newRole = () => {
+        addRole(valueRole)
     }
 
     return (
@@ -50,10 +50,11 @@ function Form() {
                     onChange={(e) => setLevel(e.target.value, level)}>
                     <option value="Junior"> Junior </option>
                     <option value="Semi Senior"> Semi Senior </option>
-                    <option value="Senior"> Junior </option>
+                    <option value="Senior"> Senior </option>
                 </select>
             </label>
-            <button onClick={newUser}>Save</button>
+            <br />
+            <button onClick={newRole}>Save</button>
 
         </div>
     );

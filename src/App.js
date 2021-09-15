@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from "./components/Header";
 import Form from './components/Form';
+import List from './components/List'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Switch>
         <Route path="/" exact>
+        <List />
 
         </Route>
         <Route path="/skill">

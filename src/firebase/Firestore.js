@@ -9,7 +9,18 @@ export const addRole = (role) => {
         .catch((error) => {
             console.error("Error adding document: ", error);
         });
-    }
+}
+
+export const getUser = (userState) => {
+    db.collection("Users").onSnapshot((querySnapshot) => {
+        const users = [];
+        querySnapshot.forEach((doc) => {
+            users.push({ ...doc.data(), id: doc.id });
+
+        });
+        return userState(users)
+    });
+}
 
 
 
