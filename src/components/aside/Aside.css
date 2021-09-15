@@ -2,7 +2,7 @@ aside {
   position: absolute;
   color: white;
   width: 192px;
-  background-image: url("../img/background-aside.png");
+  background-image: url("../../img/background-aside.png");
   background-repeat: repeat;
   background-position: center;
   /* background-size: contain; */

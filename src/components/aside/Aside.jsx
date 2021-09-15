@@ -1,8 +1,8 @@
 import React from "react";
-import add from "../img/add.svg";
-import overview from "../img/overview.svg";
-import matrix from "../img/matrix.svg";
-import confi from "../img/confi.svg";
+import add from "../../img/add.svg";
+import overview from "../../img/overview.svg";
+import matrix from "../../img/matrix.svg";
+import confi from "../../img/confi.svg";
 import "./Aside.css";
 import { Link } from "react-router-dom";
 
