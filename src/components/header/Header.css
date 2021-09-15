@@ -10,7 +10,7 @@ header {
   width: 49px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../img/logoMobile.svg") ;
+  background-image: url("../../img/logoMobile.svg") ;
 }
 .header-logo-mobile img{
   width: 49px;
@@ -59,7 +59,7 @@ header {
   width: 166px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../img/logo.png") ;
+  background-image: url("../../img/logo.png") ;
 }
 .notification-and-name{
   display: flex;
