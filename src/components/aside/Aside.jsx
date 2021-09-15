@@ -14,7 +14,7 @@ const Aside = () => {
           <Link className="aside-link" to="/">
             <img src={overview} alt="overview" />
           </Link>
-          <Link className="aside-link" to="/skills">
+          <Link className="aside-link" to="/my-skills">
             <img src={matrix} alt="field of the matrix skills" />
             My skill Matrix
           </Link>

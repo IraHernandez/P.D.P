@@ -13,7 +13,7 @@ const Header = () => {
         </div>
         <div className="header-menu ">
           <img src={menuGroupe} alt="menu page" className="menu" />
-          <div className="barra"></div>
+          <div className="barta"></div>
           <img
             src={Notification}
             alt="notification logo"

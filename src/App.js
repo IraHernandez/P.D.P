@@ -16,6 +16,8 @@ function App() {
         </Route>
         <Route path="/create-role">
         </Route>
+        <Route path="/my-skills">
+        </Route>
       </Switch>
     </Router>
   );
