@@ -1,15 +1,16 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from "./components/header/Header";
-import List from './components/List';
+import List from './components/list/List';
 import Aside from "./components/aside/Aside";
 import "./index.css";
+import Form from "./components/form/Form";
 
 function App() {
   return (
     <Router>
       <Header />
-      <Aside />
+      {/* <Aside /> */}
       <Switch>
         <Route path="/" exact>
           <List />
@@ -17,6 +18,7 @@ function App() {
         <Route path="/skills">
         </Route>
         <Route path="/create-role">
+          <Form />
         </Route>
         <Route path="/my-skills">
         </Route>
