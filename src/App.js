@@ -1,6 +1,7 @@
-import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from "./components/header/Header";
+import List from './components/List';
 import Aside from "./components/aside/Aside";
 import "./index.css";
 
@@ -11,6 +12,7 @@ function App() {
       <Aside />
       <Switch>
         <Route path="/" exact>
+          <List />
         </Route>
         <Route path="/skills">
         </Route>
