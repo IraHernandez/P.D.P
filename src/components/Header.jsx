@@ -1,10 +1,10 @@
-import React from 'react'
-import logo from "../img/logo.png"
-import menuGroupe from "../img/menuGroupe.svg"
-import Notification from "../img/Notification.svg"
-import "./Header.css"
+import React from "react";
+import logo from "../img/logo.png";
+import menuGroupe from "../img/menuGroupe.svg";
+import Notification from "../img/Notification.svg";
+import "./Header.css";
 
-const Header = ()=> {
+const Header = () => {
   return (
     <div>
       <header>
@@ -22,12 +22,8 @@ const Header = ()=> {
           <p>Cesar Avellaneda</p>
         </div>
       </header>
-
     </div>
-  )
+  );
 };
 
-
 export default Header;
-
-

@@ -2,14 +2,19 @@ aside {
   position: absolute;
   color: white;
   width: 192px;
-  /* background: url("../img/MicrosoftTeams-image\ \(3\).png") no-repeat top left transparent;
-  background-size: cover; */
-  background: rgb(231,61,58);
-  background: linear-gradient(0deg, rgba(231,61,58,1) 0%, rgba(231,61,112,1) 100%);
+  background-image: url("../img/background-aside.png");
+  background-repeat: repeat;
+  background-position: center;
+  /* background-size: contain; */
+  overflow: hidden;
   left: 0;
   top: 78px;
-  bottom: 100px;
+  bottom: 0px;
   border-bottom-right-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(223, 70, 70);
 }
 
 nav ul li {
@@ -38,4 +43,20 @@ nav ul li {
 nav ul li:nth-child(2) img,
 nav ul li:nth-child(3) img {
   margin-left: 0.5rem;
+}
+
+.line-separate {
+  height: 1px;
+  width: 95%;
+  background-color: #e1e1e1;
+  position: absolute;
+  right: 0;
+}
+
+.settings {
+  display: flex;
+  padding: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
 }
