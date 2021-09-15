@@ -34,7 +34,6 @@ function Form() {
             <label>Asociated capability*
                 <select
                     type="text"
-                    placeholder="Name of the role"
                     onChange={(e) => setRole(e.target.value, role)}>
                     <option value="Data"> Data </option>
                     <option value="Creative"> Creative </option>
@@ -48,7 +47,6 @@ function Form() {
             <label>Level of the role*
                 <select
                     type="text"
-                    placeholder="Name of the role"
                     onChange={(e) => setLevel(e.target.value, level)}>
                     <option value="Junior"> Junior </option>
                     <option value="Semi Senior"> Semi Senior </option>
