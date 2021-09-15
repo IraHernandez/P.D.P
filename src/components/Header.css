@@ -1,54 +1,86 @@
 header {
   height: 78px;
-
   display: flex;
-  justify-content: space-between;
   box-shadow: 0px 6px 14px #00000026;
+  justify-content: space-between;
   color: #ce225e;
+  padding-inline: 1rem;
 }
-
-.header-logo {
+.header-logo{
+  width: 49px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/logoMobile.svg") ;
+}
+.header-logo-mobile img{
+  width: 49px;
+  height: 48px;
+}
+.header-logo img{
+  display: none;
+}
+.header-menu{
+ display: flex;
+ gap: 29px;
+ justify-content: center;
+ align-items: center;
+}
+.notification-and-name{
   display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 29px;
+  order: -1;
 }
-
+.menu{
+  width: 21px;
+  height: 21px;
+}
+.menu-and-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row-reverse;
+}
+.barra {
+  height: 30px;
+  width: 1px;
+  background-color: #00000026;
+}
+.notification-and-name p{
+  margin: 0;
+}
+@media screen and (min-width: 430px){
+.header-logo-mobile img{
+  display: none;
+}
+.header-logo {
+  width: 166px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/logo.png") ;
+}
+.notification-and-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+  order: 1;
+}
+.menu-and-bar{
+  flex-direction: row;
+}
 .header-logo img {
+  display: flex;
   width: 146px;
-  margin-left: 14px;
-  /* margin-inline-start: 14px; */
+  margin-top: 0px;
 }
-
 /* utilidades */
 .debug {
   border: 1px solid red;
 }
-
-.header-menu {
-  display: flex;
-
-  margin-right: 26px;
-  align-items: center;
+.notification-and-name p{
+  margin: 0;
 }
-
-.menu {
-  width: 21px;
-  height: 21px;
-}
-
-.notification {
-  width: 27px;
-  height: 22px;
-  margin: 0 29px 0 20px;
-}
-
-.barra {
-  height: 35px;
-  width: 1px;
-  margin-left: 23px;
-  background-color: #00000026;
-}
-
-p{
-  margin-top: 16px
-
 }
