@@ -1,7 +1,53 @@
 aside {
   position: absolute;
+  width: 100%;
   color: white;
+  height: 200px;
+  background-image: url("../../img/menuBarMobile.png");
+  background-repeat: repeat;
+  background-position: center;
+  overflow: hidden;
+  left: 0;
+  top: 78px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.debug {
+  border: 1px solid blue;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+nav ul li {
+  /* margin-top: 1rem; */
+  list-style: none;
+  margin-top: 1.5rem;
+  display: flex;
+  
+}
+
+nav ul li:nth-child(2) img,
+nav ul li:nth-child(3) img {
+  margin-left: 0.5rem;
+}
+nav ul li:first-child img{
+  width: 137px;
+}
+
+.settings {
+  display: none;
+}
+@media screen and (min-width: 430px){
+aside {
+  position: absolute;
   width: 192px;
+  height: 80%;
   background-image: url("../../img/background-aside.png");
   background-repeat: repeat;
   background-position: center;
@@ -56,4 +102,5 @@ nav ul {
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
+}
 }
