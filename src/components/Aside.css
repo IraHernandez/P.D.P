@@ -17,9 +17,6 @@ aside {
   background-color: rgb(223, 70, 70);
 }
 
-nav ul li {
-  list-style: none;
-}
 .debug {
   border: 1px solid blue;
 }
@@ -32,16 +29,16 @@ nav ul {
   align-items: flex-start;
 }
 
-nav ul li {
+.aside-link {
   /* margin-top: 1rem; */
+  color: white;
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-
-nav ul li:nth-child(2) img,
-nav ul li:nth-child(3) img {
+.aside-link:nth-child(2) img,
+.aside-link:nth-child(3) img {
   margin-left: 0.5rem;
 }
 
