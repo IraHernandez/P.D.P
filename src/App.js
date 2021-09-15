@@ -1,24 +1,24 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from "./components/Header";
-import Form from './components/Form';
-import List from './components/List'
+import Header from "./components/header/Header";
+import List from './components/List';
+import Aside from "./components/aside/Aside";
+import "./index.css";
 
 function App() {
-
   return (
     <Router>
       <Header />
+      <Aside />
       <Switch>
         <Route path="/" exact>
-        <List />
-
+          <List />
         </Route>
-        <Route path="/skill">
-
+        <Route path="/skills">
         </Route>
-        <Route path="/CreateRole">
-          <Form />
+        <Route path="/create-role">
+        </Route>
+        <Route path="/my-skills">
         </Route>
       </Switch>
     </Router>
