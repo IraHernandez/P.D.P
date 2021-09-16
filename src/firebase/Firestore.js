@@ -11,7 +11,7 @@ export const addRole = (role) => {
         });
 }
 
-export const getUser = (userState) => {
+export const getUsers = (userState) => {
     db.collection("Users").onSnapshot((querySnapshot) => {
         const users = [];
         querySnapshot.forEach((doc) => {
@@ -21,6 +21,13 @@ export const getUser = (userState) => {
         return userState(users)
     });
 }
+export const getUser = (userid) => db.collection("Users").doc(userid);
+
+
+
+
+
+
 
 export const getSkills = (skillState) => {
     db.collection("HardSkills").onSnapshot((querySnapshot) => {
