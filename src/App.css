@@ -1,0 +1,60 @@
+.grid-fluid{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 78px 120px auto;
+}
+@media screen and (min-width: 430px){
+  .grid-fluid{
+    display: grid;
+    grid-template-columns: 220px auto;
+    grid-template-rows: 78px auto;
+    height:100vh;
+  }
+
+}
+
+header{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+@media screen and (min-width: 430px){
+  header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+aside{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+@media screen and (min-width: 430px){
+  aside{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.cards-container{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+}
+@media screen and (min-width: 430px){
+  .cards-container{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3
+
+  }
+}

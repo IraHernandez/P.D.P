@@ -21,11 +21,11 @@ function List() {
 
     return (
         <>
+            <div className="cards-container">
             <SearchBar
                 input={input}
                 setKeyword={updateInput} />
-            <div>
-                {user                
+                {user
                 .filter((user) => user.firstName.toLowerCase().includes(keyWord.toLowerCase()) || user.lastName.toLowerCase().includes(keyWord.toLowerCase()))
                 .map((user) =>
                     <Card key={user.id}
