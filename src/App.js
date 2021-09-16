@@ -1,23 +1,31 @@
 import './App.css';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Header from "./components/Header"
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Header from "./components/header/Header";
+import List from './components/list/List';
+import Aside from "./components/aside/Aside";
+import Form from './components/form/Form'
+import "./index.css";
+import ShowTable from './components/ShowTable';
+
 
 function App() {
-
   return (
     <Router>
-      <Header/>
-    <Switch>
-    <Route path="/"exact>
-
-    </Route>
-      <Route path="/skill">
-
-      </Route>
-      <Route path="/CreateRole">
-
-      </Route>
-    </Switch>
+      <Header />
+      <Aside />
+      <Switch>
+        <Route path="/" exact>
+          <List />
+        </Route>
+        <Route path="/skills">
+          <ShowTable />
+        </Route>
+        <Route path="/create-role">
+          <Form />
+        </Route>
+        <Route path="/my-skills">
+        </Route>
+      </Switch>
     </Router>
   );
 }

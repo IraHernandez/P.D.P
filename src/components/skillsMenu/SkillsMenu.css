@@ -1,0 +1,33 @@
+.skills-content{
+    display: flex;
+    width: 50%;
+}
+  
+.skills-links{
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+    align-items: center;
+}
+  
+.skills-links p {
+    margin: 0;
+}
+
+.line-separate-skills{
+  height: 2px;
+  width: 90%;
+  background-color: #DE2566;
+  display: flex;
+  position:absolute;
+}
+
+.button{
+    border-radius: 15px;
+    background-color: #58A5FF;
+    border: none;
+    height: 35px;
+    color: white;
+}
+
+
