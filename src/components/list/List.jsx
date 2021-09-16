@@ -1,8 +1,8 @@
 import React from "react";
-import { getUser } from "../firebase/Firestore";
+import { getUser } from "../../firebase/Firestore";
 import { useState, useEffect } from "react";
-import Card from "./Card";
-import SearchBar from "./SearchBar";
+import Card from "../card/Card";
+import SearchBar from "../searchBar/SearchBar";
 
 function List() {
     const [user, setUser] = useState([]);
@@ -12,6 +12,8 @@ function List() {
     useEffect(() => {
         getUser(setUser)
     }, []);
+
+    console.log(user)
 
     const updateInput = async (input) => {
         setKeyWord (input);

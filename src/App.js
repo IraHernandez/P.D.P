@@ -1,9 +1,11 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from "./components/header/Header";
-import List from './components/List';
+import List from './components/list/List';
 import Aside from "./components/aside/Aside";
 import "./index.css";
+import Form from "./components/form/Form";
+import ShowTable from './components/ShowTable';
 
 function App() {
   return (
@@ -15,8 +17,10 @@ function App() {
           <List />
         </Route>
         <Route path="/skills">
+          <ShowTable />
         </Route>
         <Route path="/create-role">
+          <Form />
         </Route>
         <Route path="/my-skills">
         </Route>
