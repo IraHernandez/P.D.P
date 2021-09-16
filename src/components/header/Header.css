@@ -1,4 +1,4 @@
-header {
+.main-header {
   height: 78px;
   display: flex;
   box-shadow: 0px 6px 14px #00000026;
@@ -24,6 +24,7 @@ header {
  gap: 29px;
  justify-content: center;
  align-items: center;
+
 }
 .notification-and-name{
   display: flex;
@@ -50,7 +51,9 @@ header {
 }
 .notification-and-name p{
   margin: 0;
+  font-family: "GothamMedium";
 }
+
 @media screen and (min-width: 430px){
 .header-logo-mobile img{
   display: none;

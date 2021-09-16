@@ -1,28 +1,37 @@
-.skills-content{
+.submenu{
     display: flex;
-    width: 50%;
+    width: 100%;
 }
-  
-.skills-links{
+
+.submenu__links-button{
+    width: 100%;    
     display: flex;
-    flex: 1;
-    gap: 1rem;
-    align-items: center;
+    justify-content: space-between;
 }
-  
-.skills-links p {
+
+.submenu__links-section{
+    display: inline-block;
+}
+
+.submenu__links{
+    border: none;
+}
+
+.submenu__tittle{
     margin: 0;
 }
 
-.line-separate-skills{
-  height: 2px;
-  width: 90%;
-  background-color: #DE2566;
-  display: flex;
-  position:absolute;
+.submenu__line{
+    height: 2px;
+    width: 90%;
+    background-color: #DE2566;
+    display: flex;
+    position:absolute;
+    margin-top: 100px;
+    margin-left: 10px;
 }
 
-.button{
+.submenu__save-button{
     border-radius: 15px;
     background-color: #58A5FF;
     border: none;

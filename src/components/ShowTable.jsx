@@ -3,6 +3,7 @@ import { getSkills } from "../firebase/Firestore";
 import { useState, useEffect } from "react";
 import Table from "./Table";
 import SkillsMenu from "./skillsMenu/SkillsMenu";
+import SubMenu from "./skillsMenu/SubMenu"
 
 function ShowTable() {
     const [skills, setSkills] = useState([]);
@@ -15,6 +16,7 @@ function ShowTable() {
         <>
         <div>
             <SkillsMenu />
+            <SubMenu />
 
         </div>
         <div>

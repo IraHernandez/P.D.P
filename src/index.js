@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './fonts/Gotham-Book-a513.otf';
+import './fonts/Gotham-Bold.otf';
+import './fonts/Gotham-Book.otf';
+import './fonts/Gotham-BookItalic.otf';
+import './fonts/Gotham-Light.otf';
+import './fonts/Gotham-Medium.otf';
+
 
 ReactDOM.render(
   <React.StrictMode>

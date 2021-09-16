@@ -15,6 +15,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  font-family: "GothamBold";
 }
 
 nav ul li {
@@ -22,7 +23,6 @@ nav ul li {
   list-style: none;
   margin-top: 1.5rem;
   display: flex;
-
 }
 
 nav ul li:nth-child(2) img,
@@ -36,6 +36,8 @@ nav ul li:first-child img{
 .settings {
   display: none;
 }
+
+
 @media screen and (min-width: 430px){
 aside {
   background-image: url("../../img/background-aside.png");

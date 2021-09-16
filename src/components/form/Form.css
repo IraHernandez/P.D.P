@@ -16,20 +16,36 @@
     margin-top:50px;
     left:.7em;
     font-size: 34px;
+    font-family: "GothamMedium";
+    font-weight: 900;
+    color: #4D4D4D;
+    text-align: start;
 }
+
+::-webkit-input-placeholder {
+    color:#414141;
+    font-size: 14px;
+    font-family: "GothamBook";
+    }
 
 .form__labels{
     color:#CE225E;
+    font-family: "GothamBold";
 }
 
 .form__input-titles{
     font-size: 16px;
 }
 
-.form__input{
+.form__inputs{
     border-radius: 15px;
     border:1.3px solid #CE225E;
     width: 345px;
+    height: 35px;
+    font-family: "GothamBook";
+    font-size: 14px;
+    color: #414141;
+    opacity: 80%;
 }
 
 .form__button{
@@ -40,6 +56,8 @@
     height: 35px;
     color: white;
     margin-top: 10px;
+    font-family: "GothamBold";
+    font-size: 16px;
 }
 
 .image-roboto{
@@ -50,35 +68,28 @@
 @media only screen and (min-width: 430px) {
 
 .form{
-    position: absolute;
+    position: relative;
     margin-top: 10px;
-    margin-left: 15em;
 }    
 
-.form__title-box{
-    position: relative;
-    height:70px;
-    left: 12em; 
-    margin-top: 10px;
-    
-}
 .form__title{
     margin-top:20px;
     left:1.3em;
     font-size: 34px;
 }
 
-.form__input{
-    width: 300px;
+.form__inputs{
+    width: 505px;
 }
 
 .form__button{
-    width: 300px;
+    width: 180px;
+    height: 35px;
+    margin-left: 325px;
 }
 
 .image-roboto{
-    width: 35%;
-    margin-left: 550px;
+    width: 100%;
 }
 }
 
