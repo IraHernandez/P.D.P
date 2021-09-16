@@ -1,7 +1,8 @@
 aside {
+  position:relative;
   color: white;
   background-image: url("../../img/menuBarMobile.png");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: center;
   display: flex;
   flex-direction: row;
@@ -11,6 +12,9 @@ aside {
   border: 1px solid blue;
 }
 
+aside p{
+  margin: 0;
+}
 nav ul {
   display: flex;
   flex-direction: row;
