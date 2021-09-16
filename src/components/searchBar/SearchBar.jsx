@@ -1,5 +1,5 @@
 import React from "react";
-import search from "../img/list/search-icon.svg";
+import search from "../../img/list/search-icon.svg";
 
 function SearchBar({setKeyword}) {
 

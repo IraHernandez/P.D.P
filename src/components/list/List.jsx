@@ -1,14 +1,13 @@
 import React from "react";
-import { getUsers } from "../firebase/Firestore";
+import { getUsers } from "../../firebase/Firestore";
 import { useState, useEffect } from "react";
-import Card from "./Card";
-import SearchBar from "./SearchBar";
-import cratk from "../img/list/cratk-icon.svg"
-import people from "../img/list/people-icon.svg";
-import path from "../img/list/path-icon.svg";
-import search from "../img/list/search-icon.svg";
+import Card from "../Card";
+import SearchBar from "../searchBar/SearchBar";
+import cratk from "../../img/list/cratk-icon.svg"
+import people from "../../img/list/people-icon.svg";
+import path from "../../img/list/path-icon.svg";
 import "./List.css"
-import "./Card.css"
+
 
 function List() {
     const [user, setUser] = useState([]);
