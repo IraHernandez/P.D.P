@@ -6,6 +6,7 @@ import SearchBar from "./SearchBar";
 
 function List() {
     const [user, setUser] = useState([]);
+    // eslint-disable-next-line
     const [input, setInput] = useState('');
     const [keyWord, setKeyWord] = useState('');
 
