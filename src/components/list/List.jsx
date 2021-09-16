@@ -1,8 +1,8 @@
 import React from "react";
-import { getUser } from "../firebase/Firestore";
+import { getUser } from "../../firebase/Firestore";
 import { useState, useEffect } from "react";
-import Card from "./Card";
-import SearchBar from "./SearchBar";
+import Card from "../card/Card";
+import SearchBar from "../searchBar/SearchBar";
 
 function List() {
     const [user, setUser] = useState([]);
@@ -14,17 +14,19 @@ function List() {
         getUser(setUser)
     }, []);
 
+    console.log(user)
+
     const updateInput = async (input) => {
         setKeyWord (input);
     }
 
     return (
         <>
+            <div className="cards-container">
             <SearchBar
                 input={input}
                 setKeyword={updateInput} />
-            <div>
-                {user                
+                {user
                 .filter((user) => user.firstName.toLowerCase().includes(keyWord.toLowerCase()) || user.lastName.toLowerCase().includes(keyWord.toLowerCase()))
                 .map((user) =>
                     <Card key={user.id}
