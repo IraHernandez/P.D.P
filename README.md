@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# People Development Plataform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Índice
 
-## Available Scripts
+* [1. Resumen del Proyecto](#1-Resumen-del-Proyecto)
+* [2. Criterios de Aceptación](#2-Criterios-de-Aceptacion)
+* [3. Consideraciones Técnicas](#3-Consideraciones-Técnicas)
+* [5. Prototipo de Alta](#5-Prototipo-de-Alta)
+* [6. Resultado](#6-Resultado)
 
-In the project directory, you can run:
 
-### `npm start`
+## 1. Resumen del Proyecto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+El reto propuesto por la empresa fue crear una plataforma para su comunidad laboral que les permita ver el avance tanto al trabajador como a su mentor. Dando así unas herramienta que nos facilita la creación de un plan de acción. Enfocandose en los sigueitnes aspectos:
+ * El mentor como usuario puede dar seguimiento a los avances de cada trabajador.
+ * En la información de cada trabajador, el mentor debe poder ver las habalidades esperadas en el rol de cada uno.
+ * El trabajador como usuario debe poder ingresar las evaluaciones hechas por su mentor.
 
-### `npm test`
+ ## 2. Criterios de Aceptación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ Se muestran 3 disferentes vistas con las siguientes características:
 
-### `npm run build`
+ ### Maquetación:
+ * El diseño de toda la plataforma es responsive web desing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ ### Funcionalidad:
+ * Logramos conectar todaas las vistas para que el usuario pueda interactuar entre ellas 
+ * La lista de la comunidad laboral proviene de un servidor externo, en este caso utilizamos Firebase
+ * Creamos una barra de busqueda que nos permite filtrar por los nombres
+ * Cada persona tendra la siquiente información:
+  - Nombre
+  - Apellido
+  - Una foto
+  - Rol
+  - Posición
+  - Progreso (donde el avance se va mostrando con una barra de color)
+ * La información almacenada de cada integrante se envia y se guarda en el servidor de Firebase
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ ## 3. Consideraciones Técnicas 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ * Utilizamos el framework de React
+ * Creamos una librería de los componentes más utilizados, como los botones, el hearde, el menu, etc.
+ * También utilizamos Bootstrap para desarrollar parte del diseño del prototipo.
 
-### `npm run eject`
+ ## 5. Prototipo de Alta
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ ## 6. Resultado 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

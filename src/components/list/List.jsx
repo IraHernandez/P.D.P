@@ -12,12 +12,15 @@ import "./Card.css"
 
 function List() {
     const [user, setUser] = useState([]);
+    // eslint-disable-next-line
     const [input, setInput] = useState('');
     const [keyWord, setKeyWord] = useState('');
 
     useEffect(() => {
         getUsers(setUser)
     }, []);
+
+    console.log(user)
 
     const updateInput = async (input) => {
         setKeyWord (input);

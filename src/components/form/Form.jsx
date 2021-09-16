@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { addRole } from '../firebase/Firestore';
+import { addRole } from '../../firebase/Firestore';
 
 function Form() {
     // Hooks to store user information
