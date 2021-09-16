@@ -22,6 +22,15 @@ export const getUser = (userState) => {
     });
 }
 
+export const getSkills = (skillState) => {
+    db.collection("HardSkills").onSnapshot((querySnapshot) => {
+        const skills = [];
+        querySnapshot.forEach((doc) => {
+            skills.push({ ...doc.data(), id: doc.id });
+        });
+        return skillState(skills)
+    });
+}
 
 
 

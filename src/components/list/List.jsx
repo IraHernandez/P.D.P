@@ -13,6 +13,8 @@ function List() {
         getUser(setUser)
     }, []);
 
+    console.log(user)
+
     const updateInput = async (input) => {
         setKeyWord (input);
     }

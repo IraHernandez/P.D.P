@@ -5,17 +5,19 @@ import List from './components/list/List';
 import Aside from "./components/aside/Aside";
 import "./index.css";
 import Form from "./components/form/Form";
+import ShowTable from './components/ShowTable';
 
 function App() {
   return (
     <Router>
       <Header />
-      {/* <Aside /> */}
+      <Aside />
       <Switch>
         <Route path="/" exact>
           <List />
         </Route>
         <Route path="/skills">
+          <ShowTable />
         </Route>
         <Route path="/create-role">
           <Form />
