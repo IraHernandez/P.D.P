@@ -5,7 +5,6 @@ import List from './components/list/List';
 import Aside from "./components/aside/Aside";
 import Form from './components/form/Form'
 import "./index.css";
-import ShowTable from './components/ShowTable';
 import SkillsMenu from './components/skillsMenu/SkillsMenu';
 
 

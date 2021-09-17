@@ -13,28 +13,28 @@ function SkillsMenu () {
           <div className="main-content">
             <div className="info-content ">
               <div className="blockTitle">
-                <h1>Skill Matrix</h1>
-                <div className="searchInput ">
-                  <input type="text" placeholder="Search pathfindee" />
+                <h1 className="blockTitle__title">Skill Matrix</h1>
+                <div className="searchInput">
+                  <input type="text" placeholder="Change pathfindee" />
                   {<img src={search} alt="" />}
                 </div>
               </div>
               <div className="blockProgress">
                 <div className="blockName">
-                  <h1>"Juan Puerto"</h1>
-                  <h4>Senior Creative Designer</h4>
+                  <h1 className="blockName__title">Laura Bustos</h1>
+                  <h4 className="blockName__title--role" >Senior Creative Designer</h4>
                 </div>
                 <div className="blockImage">
                   <p className="bold">20%</p>
-                  <span>of Matrix</span>
+                  <span className="label">of matrix</span>
                 </div>
               </div>
             </div>
             <div className="modeContent ">
-              <div className="habilities ">
+              <div className="habilities">
                 <div className="hability">
-                  {<img src={diamond} alt="" />}
-                  <span>Hardskills</span>
+                  {<img src={diamond} alt="diamond" />}
+                  <span className="hability__title">Hardskills</span>
                 </div>
                 <div className="hability">
                {   <img src={like} alt="" /> }

@@ -28,7 +28,7 @@ function List() {
         <div className="overview__menu">
           <div className="overview__menu-button">
             <img src={path} alt="Pathfindees button"/>
-            <p className="overview__menu-titles">Pathfindees</p>
+            <p className="overview__menu-titles--pink">Pathfindees</p>
           </div>
           <div className="overview__menu-button">
             <img src={cratk} alt="craft people button"/>
@@ -40,7 +40,7 @@ function List() {
           </div>
         </div>
         <div className="overview__title-pathfindees">
-          <h1>Pathfindees |</h1>
+          <h1>Pathfindees</h1>
           <SearchBar setKeyword={updateInput} />
         </div>
         <div className="card-content">

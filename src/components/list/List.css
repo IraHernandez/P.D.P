@@ -1,6 +1,7 @@
 .overview__menu{
   display: flex;
   width: 50%;
+  margin-left: 48px;
 }
 
 .overview__menu-button{
@@ -12,8 +13,17 @@
 
 .overview__menu-titles{
   margin: 0;
+  color: #C0C0C0;
+  font-family: "GothamBold";
+}
+.overview__menu-titles p{
+  margin-top: 0;
 }
 
+.overview__menu-titles--pink{
+  color: #ce225e;
+  font-family: "GothamBold";
+}
 .overview__title-pathfindees {
   color: #4d4d4d;
   display: flex;
@@ -22,10 +32,14 @@
   padding-inline: 1rem;
   margin-block-end: 2rem;
   margin-block-start: 2rem;
+  margin-left: 35px;
+  font-family: "GothamBold";
+  font-weight: 900;
 }
 
 .search-bar{
-  width: 296px;
+  width: 350px;
+  height: 35px;
   border: 1px solid #ce225e;
   padding: 11px 10px;
   border-radius: 2rem;
@@ -33,9 +47,12 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 2px 7px #ffa8c6ba;
+  margin-right: 80px;
 }
 .search-bar__input{
   width: 80%;
   border: none;
   outline: none;
+  margin-left: 20px;
+  font-family: "GothamBook";
 }

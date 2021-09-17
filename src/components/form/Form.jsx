@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { addRole } from '../../firebase/Firestore';
 import roboto from "../../img/roboto.png";
 import "./Form.css";
+import search from "../../img/card/serach-Icon.svg"
 
 function Form() {
     // Hooks to store user information
@@ -33,6 +34,7 @@ function Form() {
                         required
                     />
                 <label className="form__labels">Asociated capability*</label>
+                <div className='customSelect'>
                 <select
                     className="form-control rounded-pill form__inputs"
                     type="text"
@@ -43,18 +45,23 @@ function Form() {
                     <option value="Tech">Tech</option>
                     <option value="PMO">PMO</option>
                     <option value="Admin">Admin</option>
-                    <option value="Media">Media</option>
-                </select>
+                    <option value="Media">Media</option>        
+               </select>
+               {<img  className="search" src={search} alt="search" />}
+               </div>
                 <label className="form__labels">Level of the role*</label>
-                <select
-                    className="form-control rounded-pill form__inputs"
-                    type="text"
-                    onChange={(e) => setLevel(e.target.value, level)}
-                    required>
-                    <option value="Junior"> Junior </option>
-                    <option value="Semi Senior"> Semi Senior </option>
-                    <option value="Senior"> Senior </option>
-                </select>
+                <div className='customSelect'>
+                    <select
+                        className="form-control rounded-pill form__inputs"
+                        type="text"
+                        onChange={(e) => setLevel(e.target.value, level)}
+                        required>
+                        <option value="Junior"> Junior </option>
+                        <option value="Semi Senior"> Semi Senior </option>
+                        <option value="Senior"> Senior </option>
+                    </select>
+                    {<img  className="search" src={search} alt="search" />}
+                </div>
                 <button className="form__button" onClick={newRole}>Save</button>
             </section>
             <img className="image-roboto" src={roboto} alt="I'm a magic robot"/>

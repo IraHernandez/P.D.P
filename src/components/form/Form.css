@@ -8,7 +8,17 @@
     opacity: 1;
     transform: translateY(-100px)
 }
-
+.form-control.rounded-pill.form__inputs{
+    appearance: none;
+}
+.customSelect{
+    position: relative;
+}
+.search{
+    position: absolute;
+    top: 13px;
+    right: 10px;
+}
 .section__elements{
     margin-left: 2em;
 }

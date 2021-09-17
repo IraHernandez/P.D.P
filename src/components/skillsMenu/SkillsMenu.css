@@ -1,12 +1,52 @@
 main{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  padding-inline-start: 2rem;
+  padding-block-start: 2rem;
+}
+@media screen and (min-width: 430px){
+main{
     grid-column-start: 2;
-    grid-column-end: -1;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
-    padding-inline-start: 2rem;
-    padding-block-start: 2rem;
 }
-
+.blockTitle{
+  margin-left:-10px;
+}
+.blockTitle__title{
+  font-family: "GothamBold";
+  color: #4D4D4D;
+  font-size: 34px;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+.blockName__title{
+  color: #4D4D4D;
+  font-family: "GothamBold";
+  margin-left: 85px;
+  font-size: 25px;
+}
+.blockName__title--role{
+  color: #4D4D4D;
+  font-family: "GothamMedium";
+  font-size: 20px;
+}
+.bold {
+  color: #4D4D4D;
+  font-family: "GothamBold";
+  font-size: 25px;
+  padding-top: 16px;
+  margin-bottom: 0;
+}
+.label{
+  color: #4D4D4D;
+  font-family: "GothamBold";
+  font-size: 12px;
+  transform: translateY(-10px);
+}
 .main-content {
 
   grid-column-start: 2;
@@ -40,14 +80,18 @@ main{
   padding: 11px 10px;
   border-radius: 2rem;
   display: flex;
+  height: 35px;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 2px 7px #ffa8c6ba;
+  margin-top: 15px;
 }
 .searchInput input {
   width: 80%;
   border: none;
   outline: none;
+  font-family: "GothamBook";
+  padding-left: 15px;
 }
 
 .blockImage {
@@ -74,6 +118,7 @@ main{
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  padding-right: 23px;
 }
 
 .modeContent {
@@ -88,7 +133,8 @@ main{
 
 .habilities {
   display: flex;
-  flex-basis: 40%;
+  justify-content: space-between;
+  padding-right: 10px;
 }
 
 .hability {
@@ -97,7 +143,13 @@ main{
   /* justify-content: center; */
   align-items: center;
   padding-inline-start: 1rem;
-  gap: 1rem;
+  gap:0.5rem;
+  font-family: "GothamBold";
+  color: #C0C0C0;
+}
+.hability__title{
+  color: #CE225E;
+  font-family: "GothamBold";
 }
 .modeContent button {
   padding: 7px 28px;
@@ -188,4 +240,5 @@ dos bordes con color y que giramos con transform: rotate(-45deg);
 
 .content-select:hover i {
   margin-top: 3px;
+}
 }
