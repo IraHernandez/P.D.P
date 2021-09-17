@@ -1,12 +1,12 @@
 .form{
     margin-top: 80px;
-    margin-left: 2em;
-    width: 417px;
-    position: absolute;
-    z-index: 2;
+    margin-left: 10px;
+    width: 406px;
+    height: 112px;
     background-color: white;
     border-radius: 10px;
     opacity: 1;
+    transform: translateY(-100px)
 }
 
 .section__elements{
@@ -31,6 +31,7 @@
 .form__labels{
     color:#CE225E;
     font-family: "GothamBold";
+    margin-top: 12px;
 }
 
 .form__input-titles{
@@ -39,13 +40,14 @@
 
 .form__inputs{
     border-radius: 15px;
-    border:1.3px solid #CE225E;
     width: 345px;
     height: 35px;
     font-family: "GothamBook";
     font-size: 14px;
     color: #414141;
     opacity: 80%;
+    box-shadow: 0px 2px 7px #FFA8C6BA;
+    border: 1px solid #CE225E;
 }
 
 .form__button{
@@ -53,11 +55,13 @@
     background-color: #58A5FF;
     width: 345px;
     border: none;
-    height: 35px;
+    height: 47px;
     color: white;
     margin-top: 10px;
     font-family: "GothamBold";
     font-size: 16px;
+    border-radius: 33px;
+    margin-top: 22px;
 }
 
 .image-roboto{
@@ -68,28 +72,46 @@
 @media only screen and (min-width: 430px) {
 
 .form{
-    position: relative;
-    margin-top: 10px;
+    margin-top: 31px;
+    width: 98%;
+    margin-left: 2%;
+    height: 659px;
+    border-bottom-left-radius: 2rem ;
+    border-top-left-radius: 2rem ;
+    border-bottom-right-radius:0 ;
+    border-top-right-radius:0;
+    box-shadow: 0px 6px 14px #FFDFEA92;
+    display: flex;
+    flex-direction: row;
+    transform: translateY(0px)
 }    
 
 .form__title{
-    margin-top:20px;
+    margin-top:31px;
     left:1.3em;
     font-size: 34px;
 }
-
+.form__labels{
+    margin-top: 26px;
+}
 .form__inputs{
     width: 505px;
+    margin-bottom: 12px;
 }
 
 .form__button{
     width: 180px;
     height: 35px;
+    margin-top: 61px;
     margin-left: 325px;
+    border-radius: 33px;
 }
 
 .image-roboto{
-    width: 100%;
+    width: 487px;
+    height: 481px;
+    margin-left:18.3%;
+    margin-top: 6%;
 }
 }
 

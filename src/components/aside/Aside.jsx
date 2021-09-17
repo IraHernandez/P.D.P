@@ -8,27 +8,27 @@ import { Link } from "react-router-dom";
 
 const Aside = () => {
   return (
-    <aside className="">
+    <aside className="aside-menu">
       <nav>
-        <ul className="">
-          <Link className="aside-link" to="/">
+        <ul className="aside-menu__list">
+          <Link className="aside-menu__links" to="/">
             <img src={overview} alt="overview" />
           </Link>
-          <Link className="aside-link" to="/my-skills">
+          <Link className="aside-menu__links" to="/my-skills">
             <img src={matrix} alt="field of the matrix skills" />
             My skill Matrix
           </Link>
-          <Link className="aside-link" to="/create-role">
+          <Link className="aside-menu__links" to="/create-role">
             <img src={add} alt="field to create to new user" />
             Create
           </Link>
         </ul>
       </nav>
-      <div className="settings-content ">
-        <div className="line-separate"></div>
-        <div className="settings">
+      <div>
+        <div className="aside-menu__settings"></div>
+        <div className="aside-menu__settings-img">
           <img src={confi} alt="" />
-          <p>Settings</p>
+          <p className="aside-menu__settings-title">Settings</p>
         </div>
       </div>
     </aside>
