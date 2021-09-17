@@ -18,10 +18,10 @@ function App() {
           <List />
         </Route>
         <Route path="/skills/:name">
-          {/* <User /> */}
+          <ShowTable/>
         </Route>
         <Route path="/skills">
-          <ShowTable/>
+        
         </Route>
         <Route path="/create-role">
           <Form/>

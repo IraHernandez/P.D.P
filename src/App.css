@@ -41,7 +41,7 @@ aside{
     grid-row-end: 3;
   }
 }
-.cards-container{
+.overview{
   padding-block-start: 2rem;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -50,7 +50,7 @@ aside{
 
 }
 @media screen and (min-width: 430px){
-  .cards-container{
+  .overview{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;

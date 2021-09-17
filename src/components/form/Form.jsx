@@ -32,7 +32,6 @@ function Form() {
                         onChange={(e) => setName(e.target.value, name)}
                         required
                     />
-                <br />
                 <label className="form__labels">Asociated capability*</label>
                 <select
                     className="form-control rounded-pill form__inputs"
@@ -46,7 +45,6 @@ function Form() {
                     <option value="Admin">Admin</option>
                     <option value="Media">Media</option>
                 </select>
-                <br />
                 <label className="form__labels">Level of the role*</label>
                 <select
                     className="form-control rounded-pill form__inputs"
@@ -57,11 +55,10 @@ function Form() {
                     <option value="Semi Senior"> Semi Senior </option>
                     <option value="Senior"> Senior </option>
                 </select>
-                <br />
                 <button className="form__button" onClick={newRole}>Save</button>
             </section>
+            <img className="image-roboto" src={roboto} alt="I'm a magic robot"/>
         </form>
-        <img className="image-roboto" src={roboto} alt="I'm a magic robot"/>
         </>
     );
 
