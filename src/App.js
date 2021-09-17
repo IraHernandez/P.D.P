@@ -6,6 +6,7 @@ import Aside from "./components/aside/Aside";
 import Form from './components/form/Form'
 import "./index.css";
 import ShowTable from './components/ShowTable';
+import SkillsMenu from './components/skillsMenu/SkillsMenu';
 
 
 function App() {
@@ -17,11 +18,11 @@ function App() {
         <Route path="/" exact>
           <List />
         </Route>
-        <Route path="/skills/:name">
-          {/* <User /> */}
+        <Route path="/skills/:id">
+          <SkillsMenu/>
+          {/* <ShowTable/> */}
         </Route>
         <Route path="/skills">
-          <ShowTable/>
         </Route>
         <Route path="/create-role">
           <Form/>
