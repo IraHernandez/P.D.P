@@ -20,8 +20,12 @@ function App() {
         <Route path="/skills/:name">
           {/* <User /> */}
         </Route>
-        <Route path="/skills"></Route>
-        <Route path="/create-role"></Route>
+        <Route path="/skills">
+          <ShowTable/>
+        </Route>
+        <Route path="/create-role">
+          <Form/>
+        </Route>
         <Route path="/my-skills"></Route>
       </Switch>
     </Router>
