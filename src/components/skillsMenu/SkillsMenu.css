@@ -1,42 +1,191 @@
-.submenu{
-    display: flex;
-    width: 100%;
+main{
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding-inline-start: 2rem;
+    padding-block-start: 2rem;
 }
 
-.submenu__links-button{
-    width: 100%;    
-    display: flex;
-    justify-content: space-between;
+.main-content {
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  /* background-color: aqua; */
 }
 
-.submenu__links-section{
-    display: inline-block;
+.user-content {
+  display: flex;
+  gap: 3.5rem;
 }
 
-.submenu__links{
-    border: none;
+.user-links {
+  display: flex;
+  padding-top: 2rem;
+  align-items: center;
 }
 
-.submenu__tittle{
-    margin: 0;
+.title-block {
+  color: #4d4d4d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+  margin-block-end: 2rem;
 }
 
-.submenu__line{
-    height: 2px;
-    width: 90%;
-    background-color: #DE2566;
-    display: flex;
-    position:absolute;
-    margin-top: 100px;
-    margin-left: 10px;
+.searchInput {
+  width: 296px;
+  border: 1px solid #ce225e;
+  padding: 11px 10px;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 7px #ffa8c6ba;
+}
+.searchInput input {
+  width: 80%;
+  border: none;
+  outline: none;
 }
 
-.submenu__save-button{
-    border-radius: 15px;
-    background-color: #58A5FF;
-    border: none;
-    height: 35px;
-    color: white;
+.blockImage {
+  width: 110px;
+  height: 110px;
+  background-image: url("../../img/card/progress.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+.info-content {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1rem;
+}
 
+.blockProgress {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.modeContent {
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 45px;
+  margin-inline-end: 45px;
+
+  padding-block-end: 0.5rem;
+  border-bottom: 2px solid #de2566;
+}
+
+.habilities {
+  display: flex;
+  flex-basis: 40%;
+}
+
+.hability {
+  flex: 1;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding-inline-start: 1rem;
+  gap: 1rem;
+}
+.modeContent button {
+  padding: 7px 28px;
+  background-color: #58a5ff;
+  border: none;
+  color: white;
+  border-radius: 2rem;
+}
+
+.sortContent {
+  margin-block-start: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  padding-inline-end: 2rem;
+}
+
+.tableContent {
+  padding-inline-end: 2rem;
+  margin-block-start: 2rem;
+}
+
+.tableContent tr th {
+  background-color: #de2566;
+  color: white;
+  border-right: 1px solid white;
+  text-align: center;
+}
+
+.content-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.content-select select::-ms-expand {
+  display: none;
+}
+
+.content-select {
+  max-width: 250px;
+  position: relative;
+}
+
+.content-select select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 42px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #fdfcfc;
+  font-size: 1em;
+  color: #999;
+  font-family: "Quicksand", sans-serif;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.content-select select:hover {
+  background: #ec6073;
+  color: white;
+}
+
+/*
+Creamos la fecha que aparece a la izquierda del select.
+Realmente este elemento es un cuadrado que sólo tienen
+dos bordes con color y que giramos con transform: rotate(-45deg);
+*/
+.content-select i {
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 13px);
+  width: 16px;
+  height: 16px;
+  display: block;
+  border-left: 4px solid #c13c2a;
+  border-bottom: 4px solid #ec5656fa;
+  transform: rotate(-45deg); /* Giramos el cuadrado */
+  transition: all 0.25s ease;
+}
+
+.content-select:hover i {
+  margin-top: 3px;
+}
