@@ -1,0 +1,99 @@
+.card-content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.cards {
+  width: 280px;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 8px #e1e1e1;
+}
+
+.cards__ground{
+  height: 70px;
+  background-image:url("../../img/card/color-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.cards__grounds{
+  height: 70px;
+  background-image:url("../../img/card/fondo-morado.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+
+}
+
+.cards hr {
+  margin-inline: 1rem;
+  border-color: #e1e1e18f;
+}
+
+.cards__avatar{
+  border-radius: 50%;
+  object-fit: cover;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: calc(100% - 40px);
+  left: calc(50% - 40px);
+  padding: 0.2rem;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px;
+}
+
+.cards__information {
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards__text{
+  margin: 0;
+}
+.cards__progress-content{
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  padding-inline: 1rem;
+}
+.cards__progress-content-box{
+  height: 6px;
+  margin-inline: 1rem;
+
+  border-radius: 4rem;
+  /* display: block; */
+  background-color: #e1e1e1;
+}
+.cards__progress{
+  height: 6px;
+  width: 40%;
+  border-radius: 4rem;
+  /* display: block; */
+  background-color: #3c8df7;
+}
+
+.cards__menu{
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards__menu-quality{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

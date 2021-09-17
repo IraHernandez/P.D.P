@@ -7,20 +7,19 @@ const Header = () => {
   return (
     <>
       <header className="main-header">
-        <div className="header-logo ">
+        <div className="main-header__logo">
         </div>
-        <div className="header-menu  ">
-          <div className="menu-and-bar">
-            <img src={menuGroupe} alt="menu page" className="menu" />
-            <div className="barra"></div>
+        <div className="main-header__menu">
+          <div className="main-header__dropdown-menu">
+            <img src={menuGroupe} alt="menu page" className="main-header__menu-img" />
+            <div className="main-header__bar"></div>
           </div>
-          <div className="notification-and-name ">
+          <div className="main-header__user-notifications">
             <img
               src={Notification}
               alt="notification logo"
-              className="notification"
             />
-            <p>Cesar Avellaneda</p>
+            <p className="main-header__user">Cesar Avellaneda</p>
           </div>
         </div>
       </header>
